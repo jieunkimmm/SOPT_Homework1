@@ -13,48 +13,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="id"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.33" />
 
     <EditText
         android:id="@+id/signup_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="password"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@id/signup_signin"
+        app:layout_constraintBottom_toTopOf="@id/signIn_signupBt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signup_id"
         app:layout_constraintVertical_bias="0.426" />
 
     <Button
+        android:id="@+id/signIn_signupBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signin"
         android:text="회원가입"
-        app:layout_constraintTop_toBottomOf="@id/signup_pw"
-        app:layout_constraintBottom_toTopOf="@id/login"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/signIn_LoginBt"
         app:layout_constraintEnd_toEndOf="parent"
-        ></Button>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_pw"
+        app:layout_constraintVertical_bias="0.06999999"></Button>
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/signIn_LoginBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
         android:text="로그인"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signup_signin"></Button>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
