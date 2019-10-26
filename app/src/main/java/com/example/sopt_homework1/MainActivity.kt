@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import android.widget.Toolbar
+import com.example.sopt_homework1.GithubFollower.GithubFollowerActivity
 
 class MainActivity : AppCompatActivity() {
     var signup_id: EditText? = null
@@ -33,7 +34,8 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 //다음 화면으로 넘어가기
-
+                val intent = Intent(this@MainActivity, GithubFollowerActivity::class.java)
+                startActivity(intent)
             }
         }
 
